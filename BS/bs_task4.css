@@ -22,12 +22,24 @@
     overflow: hidden;
   }
   
-  .card .card-image img {
+  /* .card .card-image img {
     border-radius: 2px 2px 0 0;
     background-clip: padding-box;
     position: relative;
     z-index: -1;
-  }
+  } */
+  .card .card-image img {
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card .card-image img:hover {
+    transform: scale(1.1);
+    content: url("https://unsplash.it/400/400");
+}
+
+
   
   .card .card-image span.card-title {
     position: absolute;
